@@ -11,6 +11,7 @@ import { BoxComponent } from "./box/box.component";
 import { Footer, Header, Left, Right } from "./common/shared";
 import { NotificationComponent } from "./notification/notification.component";
 import { NotificationItemComponent } from "./notification/notification-item.component";
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 @NgModule({
     imports: [CommonModule, RouterModule],
@@ -25,7 +26,8 @@ import { NotificationItemComponent } from "./notification/notification-item.comp
         Left,
         Right,
         NotificationComponent,
-        NotificationItemComponent
+        NotificationItemComponent,
+        ProgressBarComponent
     ],
     exports: [
         SidebarComponent,

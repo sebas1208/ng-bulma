@@ -2,9 +2,9 @@
 
 This is an open source dashboard app made with [Bulma](https://bulma.io/).
 
-## **Disclaimer**
+## Demo
 
-This is a personal project and is for learning purposes.
+[Demo](http://ahead-pull.surge.sh/dashboard)
 
 #### Todo
 
@@ -12,7 +12,7 @@ This is a personal project and is for learning purposes.
     -   [X] Box
     -   [X] Notification
     -   [ ] Progress Bar
-    -   [ ] Dropdown
+    -   [X] Dropdown
     -   [ ] Label
     -   [ ] Message
     -   [ ] Modal
