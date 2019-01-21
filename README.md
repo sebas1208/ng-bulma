@@ -1,4 +1,4 @@
-# Ng Bulma Admin
+# Ng Bulma
 
 This is an open source component library and dashboard app made with [Bulma](https://bulma.io/).
 
@@ -34,7 +34,7 @@ The components still need more improvements:
     -   [ ] Breadcrumns
     -   [ ] Card
 
-# Ng Bulma Admin
+# Ng Bulma
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
