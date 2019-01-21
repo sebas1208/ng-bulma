@@ -4,7 +4,7 @@ This is an open source dashboard app made with [Bulma](https://bulma.io/).
 
 ## Demo
 
-[Demo](http://ahead-pull.surge.sh/dashboard)
+[Demo](http://ng-bulma.surge.sh/)
 
 #### Todo
 
