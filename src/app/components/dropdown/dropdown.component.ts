@@ -1,25 +1,40 @@
-import { Component, OnInit, Input, HostBinding } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
     selector: "ngb-dropdown",
     templateUrl: "./dropdown.component.html",
-    styles: []
+    styleUrls: ["./dropdown.component.scss"]
 })
 export class DropdownComponent implements OnInit {
 
-    @Input() title = "DropDownTitle";
-    @Input() isRight = true;
-
-    @HostBinding("class.navbar-item") navbarItem = true;
-    @HostBinding("class.has-dropdown") hasDropdown = true;
-    @HostBinding("class.is-active") isActive = false;
-
+    @Input() title: string = '';
+    @Input() hoverable: boolean = false;
+    @Input() active: boolean = false;
 
     constructor() {}
 
     ngOnInit() {}
 
-    toggleDropdown() {
-        this.isActive = !this.isActive;
+    onTriggerClick() {
+        this.active = !this.active;
     }
+}
+
+
+@Component({
+    selector: "ngb-dropdown-item",
+    template: `
+        <a class="dropdown-item" [class.is-active]="active">
+            <div *ngIf="value">
+                {{value}}
+            </div>
+            <ng-content *ngIf="!value"></ng-content>
+        </a>
+    `,
+    styleUrls: ["./dropdown.component.scss"]
+})
+export class DropdownItemComponent {
+
+    @Input() active: boolean = false;
+    @Input() value: string;
 }

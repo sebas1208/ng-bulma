@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit, Input, HostBinding } from "@angular/core";
 
 @Component({
     selector: "ngb-progress-bar",
@@ -7,9 +7,9 @@ import { Component, OnInit, Input } from "@angular/core";
 })
 export class ProgressBarComponent implements OnInit {
 
-    @Input() value: number = 0;
-    @Input() type: number = 0;
-    @Input() size: number = 0;
+    @Input() value: number;
+    @Input() is: string = '';
+    @Input() size: string = '';
 
     constructor() {}
 

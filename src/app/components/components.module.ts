@@ -5,13 +5,14 @@ import { RouterModule } from "@angular/router";
 import { SidebarComponent } from "./sidebar/sidebar.component";
 import { NavbarComponent } from "./navbar/navbar.component";
 import { FooterComponent } from "./footer/footer.component";
-import { DropdownComponent } from "./dropdown/dropdown.component";
+import { NavBarDropdownComponent } from "./navbar-dropdown/navbar-dropdown.component";
 import { BoxComponent } from "./box/box.component";
 
-import { Footer, Header, Left, Right } from "./common/shared";
+import { Footer, Header, Left, Right, Content } from "./common/shared";
 import { NotificationComponent } from "./notification/notification.component";
 import { NotificationItemComponent } from "./notification/notification-item.component";
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { DropdownComponent, DropdownItemComponent } from './dropdown/dropdown.component';
 
 @NgModule({
     imports: [CommonModule, RouterModule],
@@ -19,15 +20,18 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
         SidebarComponent,
         NavbarComponent,
         FooterComponent,
-        DropdownComponent,
+        NavBarDropdownComponent,
         BoxComponent,
         Header,
         Footer,
         Left,
         Right,
+        Content,
         NotificationComponent,
         NotificationItemComponent,
-        ProgressBarComponent
+        ProgressBarComponent,
+        DropdownComponent,
+        DropdownItemComponent
     ],
     exports: [
         SidebarComponent,
@@ -38,7 +42,12 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
         Footer,
         Left,
         Right,
-        NotificationComponent
+        Content,
+        NotificationComponent,
+        ProgressBarComponent,
+        NavBarDropdownComponent,
+        DropdownComponent,
+        DropdownItemComponent
     ]
 })
 export class ComponentsModule {}

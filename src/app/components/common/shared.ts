@@ -24,3 +24,9 @@ export class Left {}
     template: "<ng-content></ng-content>"
 })
 export class Right {}
+
+@Component({
+    selector: "b-content",
+    template: "<ng-content></ng-content>"
+})
+export class Content {}

@@ -8,6 +8,16 @@ This is an open source dashboard app made with [Bulma](https://bulma.io/).
 
 #### Todo
 
+The components still need more improvements:
+
+-   [ ] Unit tests
+-   [ ] The sidebar/navbar not working properly on mobile
+-   [ ] Inline template if not too large
+-   [ ] Login & Register pages
+-   [ ] Add themes
+-   [ ] Improve SCSS
+-   [ ] 404, 500 pages
+
 -   [ ] Make components for:
     -   [X] Box
     -   [X] Notification
@@ -23,10 +33,6 @@ This is an open source dashboard app made with [Bulma](https://bulma.io/).
     -   [ ] Charts
     -   [ ] Breadcrumns
     -   [ ] Card
--   [ ] Login & Register pages
--   [ ] Add themes
--   [ ] Improve SCSS
--   [ ] 404, 500 pages
 
 # Ng Bulma Admin
 

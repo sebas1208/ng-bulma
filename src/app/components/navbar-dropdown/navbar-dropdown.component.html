@@ -1,0 +1,14 @@
+<a class="navbar-link" (click)="toggleDropdown()">
+    <span class="icon">
+        <i class="fa fa-bell"></i>
+    </span>
+    <div class="badge is-badge-success" data-badge="10">
+        {{title}} *
+    </div>
+</a>
+
+<div class="navbar-dropdown" [class.is-right]="isRight" [class.is-left]="!isRight">
+
+    <ng-content></ng-content>
+
+</div>

@@ -1,1 +1,4 @@
-<progress class="progress is-info" value="45" max="100">45%</progress>
+<progress class="ngb-progress progress" [ngClass]="{'is-primary': is === 'primary', 'is-link': is === 'link', 'is-info': is === 'info',
+    'is-success': is === 'success', 'is-warning': is === 'warning', 'is-danger': is === 'danger', 
+    'is-small': size === 'small', 'is-medium': size === 'medium', 'is-large': size === 'large'}"
+    [value]="value" max="100">{{value}}</progress>

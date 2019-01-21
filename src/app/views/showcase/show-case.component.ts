@@ -10,10 +10,15 @@ import { NotificationService } from "../../components/notification/notification.
 export class ShowCaseComponent implements OnInit {
 
     modal = false;
+    progressValue = 50;
 
     constructor(public notificationService: NotificationService) {}
 
     ngOnInit() {
+        setInterval(() => {
+            this.progressValue += 5;
+            this.progressValue = this.progressValue > 100 ? 0 : this.progressValue;
+        }, 50);
     }
 
     primary() {

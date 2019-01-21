@@ -1,14 +1,15 @@
-<a class="navbar-link" (click)="toggleDropdown()">
-    <span class="icon">
-        <i class="fa fa-bell"></i>
-    </span>
-    <div class="badge is-badge-success" data-badge="10">
-        {{title}} *
+<div class="dropdown" [class.is-hoverable]="hoverable" [class.is-active]="!hoverable && active">
+    <div class="dropdown-trigger">
+        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu" (click)="onTriggerClick()">
+            <span>{{title}}</span>
+            <span class="icon is-small">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+        </button>
     </div>
-</a>
-
-<div class="navbar-dropdown" [class.is-right]="isRight" [class.is-left]="!isRight">
-
-    <ng-content></ng-content>
-
+    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+        <div class="dropdown-content">
+            <ng-content></ng-content>
+        </div>
+    </div>
 </div>
