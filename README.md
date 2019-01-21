@@ -1,6 +1,6 @@
 # Ng Bulma Admin
 
-This is an open source dashboard app made with [Bulma](https://bulma.io/).
+This is an open source component library and dashboard app made with [Bulma](https://bulma.io/).
 
 ## Demo
 
