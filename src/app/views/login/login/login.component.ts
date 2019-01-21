@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'cdm-login',
+  selector: 'ngb-login',
   templateUrl: './login.component.html',
   styles: []
 })

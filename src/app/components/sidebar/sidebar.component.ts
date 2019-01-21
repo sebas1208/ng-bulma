@@ -3,7 +3,7 @@ import { SidebarService } from "../../services/sidebar.service";
 
 @Component({
     moduleId: module.id,
-    selector: "cdm-sidebar-cmp",
+    selector: "ngb-sidebar-cmp",
     templateUrl: "sidebar.component.html",
     styleUrls: ["sidebar.component.scss"]
 })

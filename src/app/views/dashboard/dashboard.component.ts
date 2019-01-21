@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-    selector: "cdm-dashboard",
+    selector: "ngb-dashboard",
     templateUrl: "./dashboard.component.html",
     styles: []
 })

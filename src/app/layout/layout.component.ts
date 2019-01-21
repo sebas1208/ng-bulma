@@ -2,7 +2,7 @@ import { Component, OnInit, HostListener } from "@angular/core";
 import widthHelper from "../services/width-helper";
 
 @Component({
-    selector: "cdm-layout",
+    selector: "ngb-layout",
     templateUrl: "./layout.component.html",
     styleUrls: ["./layout.component.scss"]
 })

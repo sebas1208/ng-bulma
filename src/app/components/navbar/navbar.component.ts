@@ -11,7 +11,7 @@ import {
 
 @Component({
     moduleId: module.id,
-    selector: "cdm-navbar-cmp",
+    selector: "ngb-navbar-cmp",
     templateUrl: "navbar.component.html",
     styleUrls: ["navbar.component.scss"]
 })
@@ -23,7 +23,7 @@ export class NavbarComponent implements OnInit {
     isUserDropdownActive = false;
     listTitles = [];
 
-    @ViewChild("cdm-navbar-cmp") button;
+    @ViewChild("ngb-navbar-cmp") button;
 
     constructor() {}
 

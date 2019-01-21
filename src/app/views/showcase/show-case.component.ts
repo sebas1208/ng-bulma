@@ -3,7 +3,7 @@ import { NotificationService } from "../../components/notification/notification.
 
 
 @Component({
-    selector: "cdm-show-case",
+    selector: "ngb-show-case",
     templateUrl: "./show-case.component.html",
     styles: []
 })

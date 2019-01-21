@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-    selector: "cdm-box",
+    selector: "ngb-box",
     templateUrl: "./box.component.html",
     styleUrls: ["./box.component.scss"]
 })

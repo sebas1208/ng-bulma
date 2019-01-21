@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, HostBinding } from "@angular/core";
 
 @Component({
-    selector: "cdm-dropdown",
+    selector: "ngb-dropdown",
     templateUrl: "./dropdown.component.html",
     styles: []
 })

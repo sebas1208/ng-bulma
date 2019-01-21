@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-    selector: "cdm-tables",
+    selector: "ngb-tables",
     templateUrl: "./tables.component.html",
     styles: []
 })
