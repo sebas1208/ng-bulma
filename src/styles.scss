@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+@import '~_variables.scss';
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/bulma.sass";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+}
+
+.is-fullheight {
+    height: 100%;
+}
+
+.has-border-bottom {
+    border-bottom: 1px solid rgba(102,97,91,.3);
+}
+
+.sidebar-column {
+    top: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.sidebar-column-mobile {
+    right: 0;
+}
+
+.main-column {
+    position: relative;
+    left: $sidebar-width;
+    width: calc(100% - #{$sidebar-width});
+}
+
+.main-content {
+    margin: $gap;
+}
+
+.has-space-left {
+    left: $sidebar-width !important;
+}
+
+.has-padding-top {
+    padding-top: 100px;
+}
+
+.is-spaced-mobile {
+    padding: 1rem 2rem;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.user-image {
+    padding-left: 15px;
+}
+
+.is-spaced {
+    padding:  1rem 2rem;
+}

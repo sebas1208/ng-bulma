@@ -1,0 +1,43 @@
+<div class="cdm-sidebar" [class.is-mobile]="isMobile && isMobileMenuOpen">
+
+    <nav class="navbar is-dark is-spaced has-border-bottom" [class.is-spaced-mobile]="isMobile" role="navigation"
+        aria-label="main navigation">
+
+        <div class="navbar-brand">
+            <a href="https://bulma.io">
+                <img src="https://bulma.io/images/made-with-bulma--dark.png" alt="Made with Bulma" width="180" height="100">
+            </a>
+        </div>
+    </nav>
+    <section class="is-fullheight cmd-sidebar-menu">
+        <aside class="menu">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a [routerLink]="['/dashboard']" routerLinkActive="is-active">
+                        <span class="icon is-large">
+                            <i class="fas fa-2x fa-home">
+                            </i>
+                        </span>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a [routerLink]="['/tables']" routerLinkActive="is-active">
+                        <span class="icon is-large">
+                            <i class="fas fa-2x fa-table"></i>
+                        </span>
+                        Tables
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a [routerLink]="['/components']" routerLinkActive="is-active">
+                        <span class="icon is-large">
+                            <i class="fas fa-2x fa-book"></i>
+                        </span>
+                        Components
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </section>
+</div>

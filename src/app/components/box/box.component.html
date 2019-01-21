@@ -1,0 +1,18 @@
+<div class="box">
+    <article class="media">
+        <div class="media-left">
+            <ng-content select="b-left"></ng-content>
+        </div>
+        <div class="media-content" style="overflow-x: auto">
+            <div class="content is-mobile">
+                <ng-content></ng-content>
+            </div>
+            <div>
+                <ng-content select="b-footer"></ng-content>
+            </div>
+        </div>
+        <div class="media-right">
+            <ng-content select="b-right"></ng-content>
+        </div>
+    </article>
+</div>

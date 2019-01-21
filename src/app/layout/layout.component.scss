@@ -1,0 +1,40 @@
+@import '~_variables.scss';
+
+.fix-padding-right {
+    padding-right: 0px !important;
+}
+
+.fix-padding-left {
+    padding-left: 0px !important;
+}
+
+
+.translate-left {
+    animation: move-main 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.translate-left-sidebar {
+    animation: move-sidebar 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move-main {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-250px);
+    }
+}
+
+@keyframes move-sidebar {
+    from {
+        transform: translateX(250px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}

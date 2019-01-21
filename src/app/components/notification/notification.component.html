@@ -1,0 +1,13 @@
+<div class="ngb-notification" [ngClass]="{'top-left': position === 'top-left',
+    'top-right': position === 'top-right', 'top': position === 'top',
+    'bottom-right': position === 'bottom-right', 'bottom': position === 'bottom',
+    'bottom-left': position === 'bottom-left'}">
+    <ngb-notification-item
+        *ngFor="let notification of notifications; let i=index"
+        [message]="notification.detail"
+        [title]="notification.title"
+        [index]="i"
+        [type]="notification.type"
+        [life]="notification.life"
+        (onClose)="onCloseNotification($event)"></ngb-notification-item>
+</div>

@@ -1,0 +1,39 @@
+@import '~_variables.scss';
+
+.ngb-notification {
+    z-index: 999999;
+    position: fixed;
+    width: 400px;
+
+    &.top {
+        top: $gap;
+        left: 50%;
+        margin-left: -200px;
+    }
+
+    &.bottom {
+        bottom: $gap;
+        left: 50%;
+        margin-left: -200px;
+    }
+
+    &.top-left {
+        left: $gap;
+        top: $gap;
+    }
+
+    &.top-right {
+        right: $gap;
+        top: $gap;
+    }
+
+    &.bottom-left {
+        left: $gap;
+        bottom: $gap;
+    }
+
+    &.bottom-right {
+        right: $gap;
+        bottom: $gap;
+    }
+}

@@ -1,0 +1,7 @@
+@import '~_variables.scss';
+
+@media screen and (max-width:796px) {
+    article.media {
+        display: block !important;
+    }
+}

@@ -1,0 +1,32 @@
+<div class="is-fullheight is-paddingless is-marginless">
+    
+    <div class="is-narrow is-paddingless sidebar-column" 
+        [hidden]="isMobile && !isMobileMenuOpen" 
+        [class.fix-padding-right]="isMobile && isMobileMenuOpen"
+        [class.sidebar-column-mobile]="isMobile && isMobileMenuOpen"
+        [class.translate-left-sidebar]="isMobile && isMobileMenuOpen">
+
+        <cdm-sidebar-cmp 
+            [isMobile]="isMobile" 
+            [isMobileMenuOpen]="isMobileMenuOpen">
+        </cdm-sidebar-cmp>
+
+    </div>
+
+    <div class="is-paddingless" 
+        [class.fix-padding-left]="isMobile && isMobileMenuOpen"
+        [class.translate-left]="isMobile && isMobileMenuOpen"
+        [class.main-column]="!isMobile">
+        
+        <cdm-navbar-cmp 
+            (menuClick)="onMenuClick()" 
+            [isActive]="isMobileMenuOpen"
+            [isMobile]="isMobile">
+        </cdm-navbar-cmp>
+
+        <div class="main-content">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+</div>
